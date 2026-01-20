@@ -15,41 +15,37 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background: radial-gradient(#b6b6b6 0%, #152f3f 80%);
             min-height: 100vh;
-            padding: 20px;
+            padding: 0;
+            margin: 0;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
         }
         
         .container {
-            max-width: 900px;
             width: 100%;
             background: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
             overflow: hidden;
         }
         
         .header {
             background: #b6b6b6;
             color: white;
-            padding: 30px;
+            padding: 20px 15px;
             text-align: center;
         }
         
         .header h1 {
-            font-size: 2em;
+            font-size: 1.5em;
             margin-bottom: 10px;
         }
         
         .header p {
             opacity: 0.9;
-            font-size: 1.1em;
+            font-size: 1em;
         }
         
         .embed-container {
-            padding: 30px;
+            padding: 5px;
         }
         
         .canva-embed {
@@ -59,9 +55,9 @@
             padding-top: 129.4118%;
             padding-bottom: 0;
             box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             overflow: hidden;
-            border-radius: 8px;
+            border-radius: 0;
             will-change: transform;
         }
         
@@ -78,9 +74,9 @@
         
         .footer {
             text-align: center;
-            padding: 20px;
+            padding: 10px 5px;
             color: #666;
-            font-size: 0.9em;
+            font-size: 0.85em;
         }
         
         .footer a {
@@ -91,6 +87,47 @@
         
         .footer a:hover {
             text-decoration: underline;
+        }
+        
+        /* Tablet and Desktop styles */
+        @media (min-width: 768px) {
+            body {
+                padding: 20px;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .container {
+                max-width: 900px;
+                border-radius: 12px;
+                box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            }
+            
+            .header {
+                padding: 30px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .header p {
+                font-size: 1.1em;
+            }
+            
+            .embed-container {
+                padding: 30px;
+            }
+            
+            .footer {
+                padding: 20px;
+                font-size: 0.9em;
+            }
+            
+            .canva-embed {
+                margin-bottom: 20px;
+                border-radius: 8px;
+            }
         }
     </style>
 </head>
